@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { InputBox } from './componenets'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [amount , setAmount] = useState(0)
@@ -82,6 +83,7 @@ const convert = () => {
                     </form>
                 </div>
             </div>
+            <Analytics/>
         </div>
     );
    
